@@ -74,8 +74,7 @@ body * {
   transform: translatey(-50%);
 }
 .anime #switch button {
-  left: initial;
-  right: 0;
+  animation: slide-in 0.7s;
 }
 #switch span {
   display: block;
@@ -117,4 +116,12 @@ ul li a:hover {
 #atalhos a {
   padding: 16px;
   display: flex;
+}
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
 }
